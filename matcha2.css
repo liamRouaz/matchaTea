@@ -1,0 +1,60 @@
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
+.sidebar {
+    width: 100px; /* Largeur de la barre de navigation */
+    height: 100%; /* Prend toute la hauteur disponible */
+    background-color: #A0C539; /* Couleur de fond de la barre de navigation */
+}
+
+.sidebar ul {
+    list-style-type: none; /* Supprimer les puces de liste */
+    padding: 0; /* Supprimer les marges intérieures de la liste */
+}
+
+.sidebar ul li {
+    padding: 10px; /* Ajouter un espace autour des éléments de la liste */
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: white; /* Définir la couleur du texte des liens */
+    font-family: "The Girl Next Door", cursive; /* Utiliser la même police que pour le titre */
+    display: block; /* Permettre que chaque lien occupe toute la largeur du conteneur */
+    padding: 5px 10px; /* Ajouter un peu d'espace intérieur autour des liens */
+}
+
+.sidebar ul li a:hover {
+    background-color: #80B539; /* Changer la couleur de fond au survol */
+}
+
+.content {
+    padding: 20px; /* Ajouter un peu d'espace autour du contenu */
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 80px;
+    
+}
+
+h3, .title {
+    font-family: "The Girl Next Door", cursive;
+    font-weight: 550;
+    font-style: normal;
+    flex-grow: 1;
+    text-align: center;
+    font-size: xxx-large;
+}
+
+p, li {
+    font-family: "Patrick Hand", cursive;
+}

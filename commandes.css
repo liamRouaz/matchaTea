@@ -1,0 +1,99 @@
+
+
+
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: #E0FED6;
+}
+
+.banner {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 14%;
+    height: 200px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(224,254,214,1) 75%);
+    width: 100%;
+    z-index: 3;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333; 
+}
+
+body, html {
+    height: 100%; /* Définir la hauteur du body et de html à 100% */
+    margin: 0; /* Supprimer les marges par défaut */
+}
+
+.sidebar {
+    position: fixed; /* Pour que la barre de navigation reste fixe lors du défilement */
+    top: 0;
+    left: 0;
+    width: 200px; 
+    height: 100%; /* Définir la hauteur de la barre de navigation à 100% de la hauteur de la fenêtre */
+    background-color: #A0C539; 
+}
+
+.main-content {
+    margin-left: 200px; /* Ajuster la marge gauche pour prendre en compte la largeur de la barre de navigation */
+    padding: 20px;
+    height: 100%; /* Ajuster la hauteur pour prendre en compte la hauteur de la barre de navigation */
+    box-sizing: border-box; /* S'assurer que le padding est inclus dans la hauteur */
+}
+
+
+.sidebar ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.sidebar ul li {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff; 
+    padding: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #80B539; 
+}
+
+
+.main-content {
+    margin-left: 200px; 
+    padding: 20px;
+}
+
+
+.maps {
+    text-align: center; /* Pour centrer horizontalement le contenu à l'intérieur de .maps */
+}
+
+.maps img {
+    display: block; /* Pour supprimer tout espace supplémentaire autour de l'image */
+    margin: 0 auto; /* Pour centrer l'image horizontalement */
+    width: 600px; /* Définir la largeur souhaitée de l'image */
+    height: auto; /* Pour maintenir les proportions de l'image */
+    border-radius: 10px; /* Ajouter un border radius de 10px */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; 
+}
+
+footer {
+    text-align: center;
+    background-color: #ddd; 
+    padding: 20px;
+}

@@ -1,0 +1,129 @@
+/* Styles pour la barre de navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px; /* Largeur de la barre de navigation */
+    height: 100%; /* Hauteur de la barre de navigation */
+    background-color: #333;
+    padding-top: 20px; /* Espace en haut de la barre de navigation */
+}
+
+nav ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 20px; /* Espacement entre les éléments de la liste */
+    writing-mode: vertical-lr; /* Texte vertical */
+    transform: rotate(180deg); /* Inversion du texte */
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Styles pour le contenu principal */
+#hero {
+    margin-left: 140px; /* Décalage du contenu principal */
+    padding-top: 100px; /* Espace entre la barre de navigation et le contenu principal */
+}
+
+.product {
+    margin-left: 140px; /* Décalage du contenu principal */
+}
+
+/* Global styles */
+body {
+    font-family: "Patrick Hand", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #acd2b1; /* Couleur de fond verte matcha */
+}
+
+
+/* Style pour centrer le titre */
+h1 {
+  text-align: center;
+}
+
+
+
+
+h1, h2, h3 {
+    font-family: "The Girl Next Door", Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #acd2b1;
+    padding: 20px;
+    margin-bottom: 0; /* Supprime la marge en bas du header */
+}
+
+header h3 {
+    margin: 0;
+}
+
+/* Hero section styles */
+#hero {
+    position: relative;
+    text-align: center;
+    padding: 0; /* Ajuste le padding */
+}
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+    width: 100%; /* Pour que l'image occupe toute la largeur */
+    display: block; /* Pour éviter les espaces autour de l'image */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les paddings par défaut */
+}
+
+
+#hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+#hero h2 {
+    font-size: 24px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    #hero h1 {
+        font-size: 36px;
+    }
+
+    #hero h2 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #hero h1 {
+        font-size: 24px;
+    }
+
+    #hero h2 {
+        font-size: 14px;
+    }
+}

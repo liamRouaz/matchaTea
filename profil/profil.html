@@ -7,33 +7,59 @@
     <link rel="stylesheet" href="profil.css">
 </head>
 <body>
-    <h1>Matcha</h1>
-    <div class="photo_de_profil">
-    <img src="img/profilpp.svg">
-    <p><h2>Nom Prenom</h2></p>
-    </div>
-    <select id="civilite" name="civilite">
-        <option value="Monsieur">Monsieur</option>
-        <option value="Madame">Madame</option>
-        <option value="Mademoiselle">Mademoiselle</option>
-        <option value="Mademoiselle">Autre</option>
-      </select><br><br>
-      <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom"><br><br>
+    <header>
+        <section class="banner">
+            <img class="logo" src="assets/logo.png" alt="">
+            <h1 class="title">Matcha Tea </h1>
+        </section>
+    </header>
+    <nav class="sidebar"><!--Navbar vertical a gauche par defaut-->
+        <ul> <!--href pour rediriger vers une page ou un lien-->
+            <li><a href="A propos.html">Commandes</a></li>
+            <li><a href="Contact.html">Profil</a></li>
+        </ul>
+    </nav>
+    <nav><!--Navbar vertical a gauche par defaut-->
+      <div class= "verticalnav">
+          <ul> <!--href pour rediriger vers une page ou un lien-->
+              <li><a href="">aceuille</a></li> <!--li pour faire une liste-->
+              <li><a href="">A propo</a></li>
+              <li><a href="">Histoire</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Ventes</a></li>
+              <li><a href="">Commande</a></li>
+          </ul>
+                  
+      </div>
+   </nav>
+    <div class="fiche_profil">
+        <img src="assets/profilpp.svg">
+        <p><h2>Nom Prenom</h2></p>
         
-        <label for="nom">Prénom :</label>
-        <input type="text" id="nom" name="nom"><br><br>
-      
-        <label for="prenom">nom de l'entreprise:</label>
-        <input type="text" id="prenom" name="prenom"><br><br>
-      
-        <label for="adresse">Adresse de l'entreprise :</label>
-        <input type="text" id="adresse" name="adresse"><br><br>
+        <select>
+            <option value="Monsieur">Monsieur</option>
+            <option value="Madame">Madame</option>
+            <option value="Mademoiselle">Mademoiselle</option>
+            <option value="Mademoiselle">Autre</option>
+        </select><br><br>
+             <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom"><br><br>
+            
+            <label for="nom">Prénom :</label>
+            <input type="text" id="nom" name="nom"><br><br>
+        
+            <label for="prenom">nom de l'entreprise:</label>
+            <input type="text" id="prenom" name="prenom"><br><br>
+        
+            <label for="adresse">Adresse de l'entreprise :</label>
+            <input type="text" id="adresse" name="adresse"><br><br>
 
-        <label for="Tel">Numero professionel:</label>
-        <input type="text" id="adresse" name="adresse"><br><br>
+            <label for="Tel">Numero professionel:</label>
+            <input type="text" id="adresse" name="adresse"><br><br>
 
-        <label for="adresse">Adresse de facturation :</label>
-        <input type="text" id="adresse" name="adresse"><br><br>
+            <label for="adresse">Adresse de facturation :</label>
+            <input type="text" id="adresse" name="adresse"><br><br>
+            <button>Valider</button>
+    </div>
 </body>
 </html>

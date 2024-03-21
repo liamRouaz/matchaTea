@@ -95,8 +95,24 @@ p {
     color: #333; 
 }
 
-footer {
-    text-align: center;
-    background-color: #ddd; 
-    padding: 20px;
+footer{
+    margin-left: 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Créer trois colonnes de largeur égale */
+    grid-gap: 10px; /* Ajouter un espace entre les éléments */
+    background-color: #C0E288;
+}
+
+.footer-item{
+    text-align: center; /* Centrer le texte à l'intérieur des éléments */
+    background-color: #C0E288;
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer-item ul li a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: black; /* Définir la couleur du texte des liens */
+    font-family: "The Girl Next Door", cursive; /* Utiliser la même police que pour le titre */
+    display: block; /* Permettre que chaque lien occupe toute la largeur du conteneur */
+
 }

@@ -5,7 +5,7 @@
 body{
     background-color: #E0FED6;
 }
-
+/**** début de la bannière ****/
 .banner {
     position: fixed;
     display: flex;
@@ -20,6 +20,9 @@ body{
     width: 100px;
     height: 80px;
 }
+/**** fin de la bannière ****/
+
+/**** début du menu ****/
 .sidebar {
     position: fixed;
     width: 8%; /* Largeur de la barre de navigation */
@@ -51,11 +54,9 @@ body{
 .sidebar ul li a:hover {
     background-color: #80B539; /* Changer la couleur de fond au survol */
 }
-/****************************************************************************************/
-.content {
-    padding-top: 6%;
-}
+/**** fin du menu ****/
 
+/**** début du contenu de la page ****/
 .article1{
     background-image: url(assets/8.jpg);
     background-size: cover; /* Redimensionner l'image pour qu'elle soit entièrement visible sans déformation */
@@ -90,13 +91,41 @@ body{
     padding-top: 5%;
 }
 
+.box1{
+    background-color: #A0C539;
+    width: 40%;
+    border-radius: 10px;
+    margin-left: auto;
+    padding: 50px;
+    
+}
+
+.box2{
+    background-color: #A0C539;
+    width: 80%;
+    border-radius: 10px;
+    padding: 50px;
+    
+}
+
+.box3{
+    background-color: #A0C539;
+    width: 40%;
+    border-radius: 10px;
+    margin-right: auto;
+    padding: 50px;
+    
+}
+
 main{
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 0px;
     margin-left: 8%;
+    padding-top: 6%;
 }
 
+/**** début polices titres et textes ****/
 h3, .title {
     font-family: "The Girl Next Door", cursive;
     font-weight: 550;
@@ -111,7 +140,9 @@ p{
     font-size: x-large;
     color: black;
 }
+/**** fin polices titres et textes ****/
 
+/**** début du footer ****/
 footer{
     margin-left: 8%;
     display: grid;
@@ -147,30 +178,7 @@ footer{
     color: black;
     font-size: large;
 }
+/**** fin du footer ****/
 
-.box1{
-    background-color: #A0C539;
-    width: 40%;
-    border-radius: 10px;
-    margin-left: auto;
-    padding: 50px;
-    
-}
 
-.box2{
-    background-color: #A0C539;
-    width: 80%;
-    border-radius: 10px;
-    padding: 50px;
-    
-}
-
-.box3{
-    background-color: #A0C539;
-    width: 40%;
-    border-radius: 10px;
-    margin-right: auto;
-    padding: 50px;
-    
-}
 

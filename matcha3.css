@@ -1,3 +1,22 @@
 *{
     margin: 0;
 }
+
+body{
+    background-color: #E0FED6;
+}
+
+.banner {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(224,254,214,1) 75%);
+    width: 100%;
+    z-index: 3;
+}
+
+.logo {
+    width: 100px;
+    height: 80px;
+}

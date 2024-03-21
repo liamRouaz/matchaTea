@@ -1,48 +1,32 @@
+*{
+    margin: 0;
+}
+
 body{
     background-color: #E0FED6;
 }
 
-.block1{
-    background-image: url(assets/8.jpg);
-    background-size: cover; /* Redimensionner l'image pour qu'elle soit entièrement visible sans déformation */
-    background-repeat: no-repeat; /* Empêcher la répétition de l'image de fond */
-    background-position: center;
-    height: 400px;
-    width: auto;
-    padding-left: 120px;
+.banner {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(224,254,214,1) 75%);
+    width: 100%;
+    z-index: 3;
 }
 
-.block2{
-    background-image: url(assets/10.jpg);
-    background-size: cover; /* Redimensionner l'image pour qu'elle soit entièrement visible sans déformation */
-    background-repeat: no-repeat; /* Empêcher la répétition de l'image de fond */
-    background-position: center;
-    height: 400px;
-    width: auto;
-    padding-left: 120px;
+.logo {
+    width: 100px;
+    height: 80px;
 }
-
-.block3{
-    background-image: url(assets/11.jpg);
-    background-size: cover; /* Redimensionner l'image pour qu'elle soit entièrement visible sans déformation */
-    background-repeat: no-repeat; /* Empêcher la répétition de l'image de fond */
-    background-position: center;
-    height: 400px;
-    width: auto;
-    padding-left: 120px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 0px;
-}
-
 .sidebar {
     position: fixed;
-    width: 100px; /* Largeur de la barre de navigation */
+    width: 8%; /* Largeur de la barre de navigation */
     height: 100%; /* Prend toute la hauteur disponible */
     background-color: #A0C539; /* Couleur de fond de la barre de navigation */
+    z-index: 2;
+    
 }
 
 .sidebar ul {
@@ -51,8 +35,9 @@ body{
 }
 
 .sidebar ul li {
-    margin-top: 150px;
-    padding: 10px; /* Ajouter un espace autour des éléments de la liste */
+    text-align: center;
+    margin-top: 80%;
+    
 }
 
 .sidebar ul li a {
@@ -66,24 +51,50 @@ body{
 .sidebar ul li a:hover {
     background-color: #80B539; /* Changer la couleur de fond au survol */
 }
-
+/****************************************************************************************/
 .content {
-    padding-top: 70px; /* Ajouter un peu d'espace autour du contenu */
+    padding-top: 6%;
 }
 
-.banner {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(224,254,214,1) 100%);
-    width: 100%;
+.article1{
+    background-image: url(assets/8.jpg);
+    background-size: cover; /* Redimensionner l'image pour qu'elle soit entièrement visible sans déformation */
+    background-repeat: no-repeat; /* Empêcher la répétition de l'image de fond */
+    background-position: center;
+    height: 80vh;
+    width: auto;
+    padding-left: 12px;
+    padding-top: 2%;
 }
 
-.logo {
-    width: 100px;
-    height: 80px;
-    
+.article2{
+    background-image: url(assets/10.jpg);
+    background-size: cover; /* Redimensionner l'image pour qu'elle soit entièrement visible sans déformation */
+    background-repeat: no-repeat; /* Empêcher la répétition de l'image de fond */
+    background-position: center;
+    height: 80vh;
+    width: auto;
+    padding-left: 12px;
+    padding-top: 1%;
+
+}
+
+.article3{
+    background-image: url(assets/11.jpg);
+    background-size: cover; /* Redimensionner l'image pour qu'elle soit entièrement visible sans déformation */
+    background-repeat: no-repeat; /* Empêcher la répétition de l'image de fond */
+    background-position: center;
+    height: 80vh;
+    width: auto;
+    padding-left: 12px;
+    padding-top: 5%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0px;
+    margin-left: 8%;
 }
 
 h3, .title {
@@ -97,6 +108,69 @@ h3, .title {
 
 p{
     font-family: "Patrick Hand", cursive;
-    font-size: xx-large;
-    color: white;
+    font-size: x-large;
+    color: black;
 }
+
+footer{
+    margin-left: 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Créer trois colonnes de largeur égale */
+    grid-gap: 10px; /* Ajouter un espace entre les éléments */
+    background-color: #C0E288;
+}
+
+.footer-item{
+    text-align: center; /* Centrer le texte à l'intérieur des éléments */
+    background-color: #C0E288;
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer-item ul li a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: black; /* Définir la couleur du texte des liens */
+    font-family: "The Girl Next Door", cursive; /* Utiliser la même police que pour le titre */
+    display: block; /* Permettre que chaque lien occupe toute la largeur du conteneur */
+
+}
+
+.footer-item ul {
+    list-style-type: none;
+
+}
+
+.footer-item ul li a:hover {
+    background-color: #80B539; /* Changer la couleur de fond au survol */
+}
+
+.footer-item p{
+    color: black;
+    font-size: large;
+}
+
+.box1{
+    background-color: #A0C539;
+    width: 40%;
+    border-radius: 10px;
+    margin-left: auto;
+    padding: 50px;
+    
+}
+
+.box2{
+    background-color: #A0C539;
+    width: 80%;
+    border-radius: 10px;
+    padding: 50px;
+    
+}
+
+.box3{
+    background-color: #A0C539;
+    width: 40%;
+    border-radius: 10px;
+    margin-right: auto;
+    padding: 50px;
+    
+}
+

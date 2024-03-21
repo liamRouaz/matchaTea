@@ -5,7 +5,7 @@
 body{
     background-color: #E0FED6;
 }
-
+/**** début de la bannière ****/
 .banner {
     position: fixed;
     display: flex;
@@ -20,3 +20,44 @@ body{
     width: 100px;
     height: 80px;
 }
+/**** fin de la bannière ****/
+
+/**** début du menu ****/
+.sidebar {
+    position: fixed;
+    width: 8%; /* Largeur de la barre de navigation */
+    height: 100%; /* Prend toute la hauteur disponible */
+    background-color: #A0C539; /* Couleur de fond de la barre de navigation */
+    z-index: 2;
+    
+}
+
+.sidebar ul {
+    list-style-type: none; /* Supprimer les puces de liste */
+    padding: 0; /* Supprimer les marges intérieures de la liste */
+}
+
+.sidebar ul li {
+    text-align: center;
+    margin-top: 80%;
+    
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: white; /* Définir la couleur du texte des liens */
+    font-family: "The Girl Next Door", cursive; /* Utiliser la même police que pour le titre */
+    display: block; /* Permettre que chaque lien occupe toute la largeur du conteneur */
+    padding: 5px 10px; /* Ajouter un peu d'espace intérieur autour des liens */
+}
+
+.sidebar ul li a:hover {
+    background-color: #80B539; /* Changer la couleur de fond au survol */
+}
+/**** fin du menu ****/
+
+/**** début du contenu de la page ****/
+/**** fin du contenu de la page ****/
+
+/**** début du footer ****/
+/**** fin du footer ****/

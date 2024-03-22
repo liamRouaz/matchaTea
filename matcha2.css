@@ -1,11 +1,13 @@
 *{
     margin: 0;
+    padding: 0;
 }
 
 body{
     background-color: #E0FED6;
 }
 
+/**** début de la bannière ****/
 .banner {
     position: fixed;
     display: flex;
@@ -20,6 +22,21 @@ body{
     width: 100px;
     height: 80px;
 }
+
+
+.banner a{
+    text-decoration: none;
+    font-family: "Patrick Hand", cursive;
+    text-align: center;
+    color: black;
+}
+
+.banner p{
+    margin-top: -10px;
+}
+/**** fin de la bannière ****/
+
+/**** début de menu ****/
 .sidebar {
     position: fixed;
     width: 8%; /* Largeur de la barre de navigation */
@@ -51,9 +68,28 @@ body{
 .sidebar ul li a:hover {
     background-color: #80B539; /* Changer la couleur de fond au survol */
 }
-/****************************************************************************************/
-.content {
+/**** fin du menu ****/
+
+/**** début du contenu de la page ****/
+main{
     padding-top: 6%;
+    gap: 0px;
+    margin-left: 8%;
+}
+
+h3, .title {
+    font-family: "The Girl Next Door", cursive;
+    font-weight: 550;
+    font-style: normal;
+    flex-grow: 1;
+    text-align: center;
+    font-size: xx-large;
+}
+
+main p{
+    font-family: "Patrick Hand", cursive;
+    font-size: x-large;
+    color: black;
 }
 
 .article1{
@@ -90,28 +126,35 @@ body{
     padding-top: 5%;
 }
 
-main{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 0px;
-    margin-left: 8%;
+
+.box1{
+    background-color: #A0C539;
+    width: 40%;
+    border-radius: 10px;
+    margin-left: auto;
+    padding: 50px;
+    
 }
 
-h3, .title {
-    font-family: "The Girl Next Door", cursive;
-    font-weight: 550;
-    font-style: normal;
-    flex-grow: 1;
-    text-align: center;
-    font-size: xx-large;
+.box2{
+    background-color: #A0C539;
+    width: 80%;
+    border-radius: 10px;
+    padding: 50px;
+    
 }
 
-p{
-    font-family: "Patrick Hand", cursive;
-    font-size: x-large;
-    color: black;
+.box3{
+    background-color: #A0C539;
+    width: 40%;
+    border-radius: 10px;
+    margin-right: auto;
+    padding: 50px;
+    
 }
+/**** fin du contenu de la page ****/
 
+/**** début du footer ****/
 footer{
     margin-left: 8%;
     display: grid;
@@ -146,31 +189,6 @@ footer{
 .footer-item p{
     color: black;
     font-size: large;
+    font-family: "The Girl Next Door", cursive;
 }
-
-.box1{
-    background-color: #A0C539;
-    width: 40%;
-    border-radius: 10px;
-    margin-left: auto;
-    padding: 50px;
-    
-}
-
-.box2{
-    background-color: #A0C539;
-    width: 80%;
-    border-radius: 10px;
-    padding: 50px;
-    
-}
-
-.box3{
-    background-color: #A0C539;
-    width: 40%;
-    border-radius: 10px;
-    margin-right: auto;
-    padding: 50px;
-    
-}
-
+/**** fin du footer ****/

@@ -6,6 +6,7 @@
 body{
     background-color: #E0FED6;
 }
+
 /**** début de la bannière ****/
 .banner {
     position: fixed;
@@ -22,6 +23,7 @@ body{
     height: 80px;
 }
 
+
 .banner a{
     text-decoration: none;
     font-family: "Patrick Hand", cursive;
@@ -34,12 +36,12 @@ body{
 }
 /**** fin de la bannière ****/
 
-/**** début du menu ****/
+/**** début de menu ****/
 .sidebar {
     position: fixed;
-    width: 8%;
-    height: 100%;
-    background-color: #A0C539;
+    width: 8%; /* Largeur de la barre de navigation */
+    height: 100%; /* Prend toute la hauteur disponible */
+    background-color: #A0C539; /* Couleur de fond de la barre de navigation */
     z-index: 2;
     
 }
@@ -52,22 +54,44 @@ body{
 .sidebar ul li {
     text-align: center;
     margin-top: 80%;
+    
 }
 
 .sidebar ul li a {
-    text-decoration: none;
-    color: white; 
-    font-family: "The Girl Next Door", cursive;
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: white; /* Définir la couleur du texte des liens */
+    font-family: "The Girl Next Door", cursive; /* Utiliser la même police que pour le titre */
     display: block; /* Permettre que chaque lien occupe toute la largeur du conteneur */
     padding: 5px 10px; /* Ajouter un peu d'espace intérieur autour des liens */
 }
 
 .sidebar ul li a:hover {
-    background-color: #80B539;
+    background-color: #80B539; /* Changer la couleur de fond au survol */
 }
 /**** fin du menu ****/
 
 /**** début du contenu de la page ****/
+main{
+    padding-top: 6%;
+    gap: 0px;
+    margin-left: 8%;
+}
+
+h3, .title {
+    font-family: "The Girl Next Door", cursive;
+    font-weight: 550;
+    font-style: normal;
+    flex-grow: 1;
+    text-align: center;
+    font-size: xx-large;
+}
+
+main p{
+    font-family: "Patrick Hand", cursive;
+    font-size: x-large;
+    color: black;
+}
+
 .article1{
     background-image: url(assets/8.jpg);
     background-size: cover; /* Redimensionner l'image pour qu'elle soit entièrement visible sans déformation */
@@ -102,6 +126,7 @@ body{
     padding-top: 5%;
 }
 
+
 .box1{
     background-color: #A0C539;
     width: 40%;
@@ -127,31 +152,7 @@ body{
     padding: 50px;
     
 }
-
-main{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 0px;
-    margin-left: 8%;
-    padding-top: 6%;
-}
-
-/**** début polices titres et textes ****/
-h3, .title {
-    font-family: "The Girl Next Door", cursive;
-    font-weight: 550;
-    font-style: normal;
-    flex-grow: 1;
-    text-align: center;
-    font-size: xx-large;
-}
-
-main p{
-    font-family: "Patrick Hand", cursive;
-    font-size: x-large;
-    color: black;
-}
-/**** fin polices titres et textes ****/
+/**** fin du contenu de la page ****/
 
 /**** début du footer ****/
 footer{
@@ -171,7 +172,7 @@ footer{
 .footer-item ul li a {
     text-decoration: none; /* Supprimer le soulignement des liens */
     color: black; /* Définir la couleur du texte des liens */
-    font-family: "The Girl Next Door", cursive;
+    font-family: "The Girl Next Door", cursive; /* Utiliser la même police que pour le titre */
     display: block; /* Permettre que chaque lien occupe toute la largeur du conteneur */
 
 }
@@ -182,7 +183,7 @@ footer{
 }
 
 .footer-item ul li a:hover {
-    background-color: #80B539;
+    background-color: #80B539; /* Changer la couleur de fond au survol */
 }
 
 .footer-item p{
@@ -191,6 +192,3 @@ footer{
     font-family: "The Girl Next Door", cursive;
 }
 /**** fin du footer ****/
-
-
-

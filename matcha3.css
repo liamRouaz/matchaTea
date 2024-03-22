@@ -1,10 +1,23 @@
 *{
     margin: 0;
+    padding: 0;
+}
+
+/**** début polices titres et textes, background ****/
+h3, .title {
+    font-family: "The Girl Next Door", cursive;
+    font-weight: 550;
+    font-style: normal;
+    flex-grow: 1;
+    text-align: center;
+    font-size: xx-large;
 }
 
 body{
     background-color: #E0FED6;
 }
+/**** fin polices titres et textes, background ****/
+
 /**** début de la bannière ****/
 .banner {
     position: fixed;
@@ -57,7 +70,7 @@ body{
 .sidebar ul li a {
     text-decoration: none; /* Supprimer le soulignement des liens */
     color: white; /* Définir la couleur du texte des liens */
-    font-family: "The Girl Next Door", cursive; /* Utiliser la même police que pour le titre */
+    font-family: "The Girl Next Door", cursive;
     display: block; /* Permettre que chaque lien occupe toute la largeur du conteneur */
     padding: 5px 10px; /* Ajouter un peu d'espace intérieur autour des liens */
 }
@@ -67,91 +80,99 @@ body{
 }
 /**** fin du menu ****/
 
-/**** début du contenu de la page ****/
-.article1{
-    background-image: url(assets/8.jpg);
-    background-size: cover; /* Redimensionner l'image pour qu'elle soit entièrement visible sans déformation */
-    background-repeat: no-repeat; /* Empêcher la répétition de l'image de fond */
-    background-position: center;
-    height: 80vh;
-    width: auto;
-    padding-left: 12px;
-    padding-top: 2%;
+/**** début titre de page ****/
+.top_page{
+    padding-bottom: 100px;
 }
-
-.article2{
-    background-image: url(assets/10.jpg);
-    background-size: cover; /* Redimensionner l'image pour qu'elle soit entièrement visible sans déformation */
-    background-repeat: no-repeat; /* Empêcher la répétition de l'image de fond */
-    background-position: center;
-    height: 80vh;
-    width: auto;
-    padding-left: 12px;
-    padding-top: 1%;
-
-}
-
-.article3{
-    background-image: url(assets/11.jpg);
-    background-size: cover; /* Redimensionner l'image pour qu'elle soit entièrement visible sans déformation */
-    background-repeat: no-repeat; /* Empêcher la répétition de l'image de fond */
-    background-position: center;
-    height: 80vh;
-    width: auto;
-    padding-left: 12px;
-    padding-top: 5%;
-}
-
-.box1{
-    background-color: #A0C539;
-    width: 40%;
-    border-radius: 10px;
-    margin-left: auto;
-    padding: 50px;
-    
-}
-
-.box2{
-    background-color: #A0C539;
-    width: 80%;
-    border-radius: 10px;
-    padding: 50px;
-    
-}
-
-.box3{
-    background-color: #A0C539;
-    width: 40%;
-    border-radius: 10px;
-    margin-right: auto;
-    padding: 50px;
-    
-}
-
-main{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 0px;
-    margin-left: 8%;
-    padding-top: 6%;
-}
-
-/**** début polices titres et textes ****/
-h3, .title {
+.top_page h1 {
     font-family: "The Girl Next Door", cursive;
     font-weight: 550;
     font-style: normal;
-    flex-grow: 1;
     text-align: center;
-    font-size: xx-large;
+    font-size: xxx-large;
 }
 
-p{
-    font-family: "Patrick Hand", cursive;
-    font-size: x-large;
-    color: black;
+.top_page h4{
+    text-align: center;
+    font-family: "The Girl Next Door", cursive;
+    font-size: large;
+    
 }
-/**** fin polices titres et textes ****/
+/**** fin titre de page ****/
+
+/**** début du contenu de la page ****/
+main{
+    margin-left: 100px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.product{
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.product_header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "The Girl Next Door", cursive;
+}
+
+.description_product{
+    margin-top: 1%;
+    font-family: "The Girl Next Door", cursive;
+}
+
+.product_button {
+    font-family: "The Girl Next Door", cursive;
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Masquer le bouton par défaut */
+    transition: opacity 0.3s ease; /* Ajouter une transition d'opacité */
+}
+
+.product img {
+    transition: filter 0.3s ease; /* Ajouter une transition pour le flou */
+}
+
+.product:hover img {
+    filter: blur(2px); /* Appliquer un flou lorsque le conteneur est survolé */
+}
+
+.product:hover .product_button {
+    opacity: 1; /* Afficher le bouton lorsque le conteneur est survolé */
+}
+
+/**** début de la video ****/
+.video{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 70%;
+}
+
+.video iframe{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+}
+/**** fin de la vidéo ****/
+/**** fin du contenu de la page ****/
 
 /**** début du footer ****/
 footer{
@@ -188,8 +209,16 @@ footer{
 .footer-item p{
     color: black;
     font-size: large;
+    font-family: "The Girl Next Door", cursive;
 }
 /**** fin du footer ****/
 
-
-
+@media screen and (max-width: 640px){
+    .sidebar {
+        display: none;
+    }
+    .product img, .product_header, .description_product{
+        width: 300px;
+        padding-left: 50px;
+    }
+}

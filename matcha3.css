@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
 }
 
 /**** début polices titres et textes, background ****/
@@ -10,12 +11,6 @@ h3, .title {
     flex-grow: 1;
     text-align: center;
     font-size: xx-large;
-}
-
-p{
-    font-family: "Patrick Hand", cursive;
-    font-size: x-large;
-    color: black;
 }
 
 body{
@@ -74,7 +69,56 @@ body{
 }
 /**** fin du menu ****/
 
+/**** début titre de page ****/
+.top_page{
+    padding-bottom: 100px;
+}
+.top_page h1 {
+    font-family: "The Girl Next Door", cursive;
+    font-weight: 550;
+    font-style: normal;
+    text-align: center;
+    font-size: xxx-large;
+}
+
+.top_page h4{
+    text-align: center;
+    font-family: "The Girl Next Door", cursive;
+    font-size: large;
+    
+}
+/**** fin titre de page ****/
+
 /**** début du contenu de la page ****/
+main{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.product{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.product_header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "The Girl Next Door", cursive;
+}
+
+.description_product{
+    margin-top: 1%;
+    font-family: "The Girl Next Door", cursive;
+}
 /**** fin du contenu de la page ****/
 
 /**** début du footer ****/

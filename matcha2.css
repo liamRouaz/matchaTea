@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
 }
 
 body{
@@ -36,9 +37,9 @@ body{
 /**** début du menu ****/
 .sidebar {
     position: fixed;
-    width: 8%; /* Largeur de la barre de navigation */
-    height: 100%; /* Prend toute la hauteur disponible */
-    background-color: #A0C539; /* Couleur de fond de la barre de navigation */
+    width: 8%;
+    height: 100%;
+    background-color: #A0C539;
     z-index: 2;
     
 }
@@ -55,15 +56,15 @@ body{
 }
 
 .sidebar ul li a {
-    text-decoration: none; /* Supprimer le soulignement des liens */
-    color: white; /* Définir la couleur du texte des liens */
-    font-family: "The Girl Next Door", cursive; /* Utiliser la même police que pour le titre */
+    text-decoration: none;
+    color: white; 
+    font-family: "The Girl Next Door", cursive;
     display: block; /* Permettre que chaque lien occupe toute la largeur du conteneur */
     padding: 5px 10px; /* Ajouter un peu d'espace intérieur autour des liens */
 }
 
 .sidebar ul li a:hover {
-    background-color: #80B539; /* Changer la couleur de fond au survol */
+    background-color: #80B539;
 }
 /**** fin du menu ****/
 
@@ -146,7 +147,7 @@ h3, .title {
     font-size: xx-large;
 }
 
-p{
+main p{
     font-family: "Patrick Hand", cursive;
     font-size: x-large;
     color: black;
@@ -171,7 +172,7 @@ footer{
 .footer-item ul li a {
     text-decoration: none; /* Supprimer le soulignement des liens */
     color: black; /* Définir la couleur du texte des liens */
-    font-family: "The Girl Next Door", cursive; /* Utiliser la même police que pour le titre */
+    font-family: "The Girl Next Door", cursive;
     display: block; /* Permettre que chaque lien occupe toute la largeur du conteneur */
 
 }
@@ -182,12 +183,13 @@ footer{
 }
 
 .footer-item ul li a:hover {
-    background-color: #80B539; /* Changer la couleur de fond au survol */
+    background-color: #80B539;
 }
 
 .footer-item p{
     color: black;
     font-size: large;
+    font-family: "The Girl Next Door", cursive;
 }
 /**** fin du footer ****/
 

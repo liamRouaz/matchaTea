@@ -1,0 +1,229 @@
+h1,
+.title {
+  font-family: "The Girl Next Door", cursive;
+  font-weight: 550;
+  font-style: normal;
+  text-align: center;
+  font-size: xx-large;
+  color: black;
+  width: 150%; /* Ajustement de la largeur */
+}
+
+/* Styles pour le banner */
+.banner {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(224, 254, 214, 1) 75%
+    );
+    width: calc(100% - 80px); /* Réduire la largeur totale du viewport de 80px */
+    z-index: 3;
+    margin-top: 0;
+    margin-left: 100px; /* Décaler vers la droite de 80px */
+    top: 0; /* Coller en haut de la page */
+  }
+  
+
+.logo {
+  width: 80px; /* Taille du logo en pixels */
+  height: 45px; /* Hauteur automatique pour conserver les proportions */
+  margin-right: 10px; /* Marge à droite pour séparer le logo du titre */
+}
+
+
+
+
+
+
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px; /* Largeur de la barre de navigation */
+    height: 100%; /* Hauteur de la barre de navigation */
+    background-color: #80B539;
+    padding-top: 20px; /* Espace en haut de la barre de navigation */
+}
+
+nav ul {
+    list-style-type: none; /* Supprime les puces de la liste */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 20px; /* Espacement entre les éléments de la liste */
+    writing-mode: vertical-lr; /* Texte vertical */
+    transform: rotate(180deg); /* Inversion du texte */
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #5e9813;
+}
+ /* Styles pour le contenu principal */
+ #hero {
+    margin-left: 140px; /* Décalage du contenu principal */
+    padding-top: 100px; /* Espace entre la barre de navigation et le contenu principal */
+}
+
+.product {
+    margin-left: 140px; /* Décalage du contenu principal */
+}
+
+/* Global styles */
+body {
+    font-family: "The Girl Next Door", cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #d3f59d; /* Couleur de fond verte matcha */
+}
+
+
+  
+  p {
+    font-family: "The Girl Next Door", cursive;
+    color: white;
+  }
+  
+  h1, h2, h3 {
+      font-family: "The Girl Next Door", cursive;
+      color: #ffffff;
+  }
+
+/* Styles pour le contenu principal */
+main {
+    margin-left: 130px; /* Ajouter une marge à gauche égale à la largeur de la barre de navigation */
+}
+
+.photo
+img {
+    max-width: 50%; /* La largeur de l'image ne dépassera pas la largeur du conteneur parent */
+    height: auto; /* La hauteur de l'image s'ajuste automatiquement pour conserver les proportions */
+}
+
+
+/* CSS pour l'espacement entre les sections */
+#description-equipe {
+    margin-bottom: 100px; /* Espacement en bas de la section "Description de l'équipe" */
+  }
+  
+  #photos-equipe {
+    margin-bottom: 20px; /* Espacement en bas de la section "Photos de l'équipe" */
+  }
+  
+  /* CSS pour l'espacement entre chaque rôle de membre */
+  .photo p {
+    margin-bottom: 20px; /* Espacement entre chaque rôle de membre */
+  }
+  
+.spacer
+{
+   margin-bottom: 100px;
+}
+
+
+.spacer2
+{
+    margin-bottom: 100px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    #hero h1 {
+      font-size: 36px;
+    }
+  
+    #hero h2 {
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    #hero h1 {
+      font-size: 24px;
+    }
+  
+    #hero h2 {
+      font-size: 14px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    margin-left: 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Créer trois colonnes de largeur égale */
+    grid-gap: 10px; /* Ajouter un espace entre les éléments */
+    background-color: #C0E288;
+}
+
+.footer-item{
+    text-align: center; /* Centrer le texte à l'intérieur des éléments */
+    background-color: #C0E288;
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer-item ul li a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: black; /* Définir la couleur du texte des liens */
+    font-family: "The Girl Next Door", cursive; /* Utiliser la même police que pour le titre */
+    display: block; /* Permettre que chaque lien occupe toute la largeur du conteneur */
+
+}
+
+.footer-item ul {
+    list-style-type: none;
+    margin-right: 50px; /* Ajoute une marge à gauche pour décaler le footer */
+
+}
+
+.footer-item ul li a:hover {
+    background-color: #80B539; /* Changer la couleur de fond au survol */
+}
+
+.footer-item p{
+    color: black;
+    font-size: large;
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Matcha</h1>
+    <nav><!--Navbar vertical a gauche par defaut-->
+      <div class= "verticalnav">
+          <ul> <!--href pour rediriger vers une page ou un lien-->
+              <li><a href="">aceuille</a></li> <!--li pour faire une liste-->
+              <li><a href="">A propo</a></li>
+              <li><a href="">Histoire</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Ventes</a></li>
+              <li><a href="">Commande</a></li>
+          </ul>
+          <form action="/votre-page-de-traitement" method="post">
+            <label for="civilite">Civilité :</label>
+            <select id="civilite" name="civilite">
+              <option value="Monsieur">Monsieur</option>
+              <option value="Madame">Madame</option>
+              <option value="Mademoiselle">Mademoiselle</option>
+            </select><br><br>
+          
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom"><br><br>
+          
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom"><br><br>
+
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse"><br><br>
+
+            <label for="adresse">Adresse mail :</label>
+            <input type="text" id="adresse_mail" name="adresse_mail"><br><br>
+          
+            <p>*:facultatife</p>
+            <label for="Numero">Numero de telephone *:</label>
+            <input type="text" id="Numero" name="Numero"><br><br>
+
+            <input type="checkbox" id="politique_confidentialite" name="politique_confidentialite">
+            <label for="politique_confidentialite">J'accepte la politique de confidentialité</label><br><br>
+
+            <input type="checkbox" id="politique_confidentialite2" name="politique_confidentialite2">
+            <label for="politique_confidentialite2">Je souhaite etre tenu au courant pars telephone </label><br><br>
+          
+            <input type="submit" value="Valider">
+          </form> 
+         
+      </div>
+      
+</body>
+</html>

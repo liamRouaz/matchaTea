@@ -78,6 +78,11 @@ body{
 .sidebar ul li a:hover {
     background-color: #80B539; /* Changer la couleur de fond au survol */
 }
+
+.burger{
+    padding-top: 80px;
+    opacity: 0;
+}
 /**** fin du menu ****/
 
 /**** début titre de page ****/
@@ -221,4 +226,14 @@ footer{
         width: 300px;
         padding-left: 50px;
     }
+    .burger{
+        opacity: 1;
+        position: fixed;
+    }
+    /*body{
+        background-image: url(assets/burger.jpg);
+        background-repeat: no-repeat;
+        background-position-y: 80px;
+    }*/
+
 }

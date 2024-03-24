@@ -68,6 +68,11 @@ body{
 .sidebar ul li a:hover {
     background-color: #80B539; /* Changer la couleur de fond au survol */
 }
+
+.burger{
+    padding-top: 80px;
+    opacity: 0;
+}
 /**** fin du menu ****/
 
 /**** début du contenu de la page ****/
@@ -192,3 +197,14 @@ footer{
     font-family: "The Girl Next Door", cursive;
 }
 /**** fin du footer ****/
+
+@media screen and (max-width: 640px){
+    .sidebar {
+        display: none;
+    }
+
+    .burger{
+        opacity: 1;
+        position: fixed;
+    }
+}

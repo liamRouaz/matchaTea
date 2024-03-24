@@ -13,7 +13,7 @@ body {
 
 .banner {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(224,254,214,1) 75%);
     width: 100%;
@@ -22,7 +22,7 @@ body {
 
 .logo {
 
-    margin-left: 40%;
+    margin-left: 35%;
     width: 100px;
     height: 80px;
 }
@@ -33,6 +33,18 @@ body {
     text-align: center;
     color: black;
 }
+.banner h1{
+    padding-right: 35%;
+}
+.icon {
+    position: fixed; /* position fixe par rapport à la fenêtre */
+    left: 1%; /* positionné tout à gauche de la fenêtre */
+    top: 7%; /* ajuste la position verticale */
+    transform: translateY(-50%); /* centre verticalement */
+    padding: 10px; /* ajoute un peu d'espace */
+}
+
+
 
 .banner p{
     margin-top: -10px;
@@ -97,13 +109,36 @@ body, html {
 .maps {
     text-align: center; /* Pour centrer horizontalement le contenu à l'intérieur de .maps */
 }
+.maps p {
+    margin-left: 30%;
+    border: solid black;
+    border-radius: 10PX;
+    width: 40%;
+    animation: customAni 2s ease 0s 2 normal none;
+    background-color: #A1C539;
+    
+   
+}
+@keyframes customAni {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0.2;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
 
 .maps img {
-    display: block; /* Pour supprimer tout espace supplémentaire autour de l'image */
-    margin: 0 auto; /* Pour centrer l'image horizontalement */
-    width: 600px; /* Définir la largeur souhaitée de l'image */
-    height: auto; /* Pour maintenir les proportions de l'image */
-    border-radius: 10px; /* Ajouter un border radius de 10px */
+    display: block; 
+    margin: 0 auto; 
+    width: 600px; 
+    height: auto; 
+    border-radius: 10px; 
 }
 
 p {

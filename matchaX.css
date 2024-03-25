@@ -9,6 +9,31 @@ h1,
   color: black;
   width: 150%; /* Ajustement de la largeur */
 }
+.burger {
+    padding-right: 300px; /* Garde un espace à droite */
+    opacity: 0; /* Rend l'élément invisible */
+    position: fixed; /* Positionnement fixe pour que l'élément reste à gauche */
+    left: 0; /* Colle l'élément à gauche */
+    top: 0; /* Colle l'élément en haut de la page */
+    
+}
+
+
+
+
+
+@media screen and (max-width: 640px){
+    .sidebar{
+        display: none;
+    }
+   .burger{
+    opacity: 1;
+    position: fixed;
+    } 
+}
+
+
+
 
 /* Styles pour le banner */
 .banner {

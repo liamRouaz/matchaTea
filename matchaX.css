@@ -1,0 +1,263 @@
+/* Styles pour le titre */
+h1,
+.title {
+  font-family: "The Girl Next Door", cursive;
+  font-weight: 550;
+  font-style: normal;
+  text-align: center;
+  font-size: xx-large;
+  color: black;
+  width: 150%; /* Ajustement de la largeur */
+}
+.burger {
+    padding-right: 300px; /* Garde un espace à droite */
+    opacity: 0; /* Rend l'élément invisible */
+    position: fixed; /* Positionnement fixe pour que l'élément reste à gauche */
+    left: 0; /* Colle l'élément à gauche */
+    top: 0; /* Colle l'élément en haut de la page */
+    
+}
+
+
+
+
+
+@media screen and (max-width: 640px){
+    .sidebar{
+        display: none;
+    }
+   .burger{
+    opacity: 1;
+    position: fixed;
+    } 
+}
+
+
+
+
+/* Styles pour le banner */
+.banner {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(224, 254, 214, 1) 75%
+    );
+    width: calc(100% - 80px); /* Réduire la largeur totale du viewport de 80px */
+    z-index: 3;
+    margin-top: 0;
+    margin-left: 80px; /* Décaler vers la droite de 80px */
+    top: 0; /* Coller en haut de la page */
+  }
+  
+
+.logo {
+  width: 80px; /* Taille du logo en pixels */
+  height: 45px; /* Hauteur automatique pour conserver les proportions */
+  margin-right: 10px; /* Marge à droite pour séparer le logo du titre */
+}
+
+/* Styles pour la barre de navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px; /* Largeur de la barre de navigation */
+  height: 100%; /* Hauteur de la barre de navigation */
+  background-color: #80b539;
+  padding-top: 20px; /* Espace en haut de la barre de navigation */
+}
+
+nav ul {
+  list-style-type: none; /* Supprime les puces de la liste */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 20px; /* Espacement entre les éléments de la liste */
+  writing-mode: vertical-lr; /* Texte vertical */
+  transform: rotate(180deg); /* Inversion du texte */
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: #5e9813;
+}
+
+/* Styles pour le contenu principal */
+#hero {
+  margin-left: 140px; /* Décalage du contenu principal */
+  padding-top: 100px; /* Espace entre la barre de navigation et le contenu principal */
+}
+
+.product {
+  margin-left: 140px; /* Décalage du contenu principal */
+}
+
+/* Global styles */
+body {
+  font-family: "The Girl Next Door", cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #d3f59d; /* Couleur de fond verte matcha */
+}
+
+/* Style pour centrer le titre */
+h1 {
+  text-align: center;
+}
+
+p {
+  font-family: "The Girl Next Door", cursive;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "The Girl Next Door", cursive;
+  color: #ffffff;
+}
+
+/* Header styles */
+header {
+  background-color: #80b539;
+  color: #acd2b1;
+  padding: 20px;
+  margin-bottom: 0; /* Supprime la marge en bas du header */
+}
+
+header h3 {
+  margin: 0;
+}
+
+#hero {
+  position: relative; /* Position relative pour positionner les éléments enfants absolument */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #006400; /* Vert foncé */
+  background-color: rgba(172, 210, 177, 0.5); /* Fond vert mi-transparent */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 28px;
+}
+
+.hero-overlay h2 {
+  font-size: 24px; /* Taille de police du texte */
+}
+
+#hero img {
+  width: 100%; /* Assure que l'image s'adapte à la largeur de son conteneur */
+  height: auto; /* Garde le rapport hauteur/largeur */
+  display: block; /* Supprime les marges autour de l'image */
+  margin: 0 auto; /* Centre l'image horizontalement */
+}
+
+#hero h2 {
+  font-size: 24px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  #hero h1 {
+    font-size: 36px;
+  }
+
+  #hero h2 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #hero h1 {
+    font-size: 24px;
+  }
+
+  #hero h2 {
+    font-size: 14px;
+  }
+}
+
+#featured-products {
+  padding-top: 20px; /* Ajoute un espace entre le titre et les produits */
+}
+
+#featured-products h2 {
+  text-align: center; /* Centre le titre */
+}
+
+.products-container {
+  display: flex; /* Utilise Flexbox pour disposer les produits horizontalement */
+  flex-wrap: wrap; /* Permet aux produits de se mettre à la ligne si l'espace est insuffisant */
+  justify-content: space-around; /* Répartit les produits de manière égale sur l'axe horizontal */
+  margin-left: 120px; /* Ajoute un décalage pour éviter de dépasser la barre de navigation */
+}
+
+.product {
+  width: calc(33.33% - 20px); /* Définit la largeur des produits avec un espace entre eux */
+  margin-bottom: 20px; /* Ajoute un espace entre les produits */
+  text-align: center; /* Centre le contenu des produits */
+}
+
+.product:hover {
+  background-color: #80b539; /* Couleur de fond au survol */
+}
+
+.product img {
+  max-width: 100%; /* Assure que les images des produits s'adaptent à la largeur de leur conteneur */
+  height: auto;
+}
+
+footer{
+    margin-left: 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Créer trois colonnes de largeur égale */
+    grid-gap: 10px; /* Ajouter un espace entre les éléments */
+    background-color: #C0E288;
+}
+
+.footer-item{
+    text-align: center; /* Centrer le texte à l'intérieur des éléments */
+    background-color: #C0E288;
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer-item ul li a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: black; /* Définir la couleur du texte des liens */
+    font-family: "The Girl Next Door", cursive; /* Utiliser la même police que pour le titre */
+    display: block; /* Permettre que chaque lien occupe toute la largeur du conteneur */
+
+}
+
+.footer-item ul {
+    list-style-type: none;
+    margin-right: 50px;
+
+}
+
+.footer-item ul li a:hover {
+    background-color: #80B539; /* Changer la couleur de fond au survol */
+}
+
+.footer-item p{
+    color: black;
+    font-size: large;
+}

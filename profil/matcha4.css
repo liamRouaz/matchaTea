@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/**** début polices titres et textes, background ****/
+h3, .title {
+    font-family: "The Girl Next Door", cursive;
+    font-weight: 550;
+    font-style: normal;
+    flex-grow: 1;
+    text-align: center;
+    font-size: xx-large;
+}
+
+body{
+    background-color: #E0FED6;
+}
+/**** fin polices titres et textes, background ****/
+
+/**** début de la bannière ****/
+.banner {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(224,254,214,1) 75%);
+    width: 100%;
+    z-index: 3;
+}
+
+.logo {
+    width: 100px;
+    height: 80px;
+}
+
+.banner a{
+    text-decoration: none;
+    font-family: "Patrick Hand", cursive;
+    text-align: center;
+    color: black;
+}
+
+.banner p{
+    margin-top: -10px;
+}
+/**** fin de la bannière ****/
+
+/**** début du menu ****/
+.sidebar {
+    position: fixed;
+    width: 8%; /* Largeur de la barre de navigation */
+    height: 100%; /* Prend toute la hauteur disponible */
+    background-color: #A0C539; /* Couleur de fond de la barre de navigation */
+    z-index: 2;
+    
+}
+
+.sidebar ul {
+    list-style-type: none; /* Supprimer les puces de liste */
+    padding: 0; /* Supprimer les marges intérieures de la liste */
+}
+
+.sidebar ul li {
+    text-align: center;
+    margin-top: 80%;
+    
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: white; /* Définir la couleur du texte des liens */
+    font-family: "The Girl Next Door", cursive;
+    display: block; /* Permettre que chaque lien occupe toute la largeur du conteneur */
+    padding: 5px 10px; /* Ajouter un peu d'espace intérieur autour des liens */
+}
+
+.sidebar ul li a:hover {
+    background-color: #80B539; /* Changer la couleur de fond au survol */
+}
+
+.burger{
+    padding-top: 80px;
+    opacity: 0;
+}
+/**** fin du menu ****/
+
+/**** début titre de page ****/
+.top_page{
+    padding-bottom: 100px;
+}
+.top_page h1 {
+    font-family: "The Girl Next Door", cursive;
+    font-weight: 550;
+    font-style: normal;
+    text-align: center;
+    font-size: xxx-large;
+}
+
+.top_page h4{
+    text-align: center;
+    font-family: "The Girl Next Door", cursive;
+    font-size: large;
+    
+}
+/**** fin titre de page ****/
+
+/**** début du contenu de la page ****/
+main{
+    margin-left: 100px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.product{
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.product_header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "The Girl Next Door", cursive;
+}
+
+.description_product{
+    margin-top: 1%;
+    font-family: "The Girl Next Door", cursive;
+}
+
+.product_button {
+    font-family: "The Girl Next Door", cursive;
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Masquer le bouton par défaut */
+    transition: opacity 0.3s ease; /* Ajouter une transition d'opacité */
+}
+
+.product img {
+    transition: filter 0.3s ease; /* Ajouter une transition pour le flou */
+}
+
+.product:hover img {
+    filter: blur(2px); /* Appliquer un flou lorsque le conteneur est survolé */
+}
+
+.product:hover .product_button {
+    opacity: 1; /* Afficher le bouton lorsque le conteneur est survolé */
+}
+
+/**** début de la video ****/
+.video{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 70%;
+}
+
+.video iframe{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+}
+/**** fin de la vidéo ****/
+/**** fin du contenu de la page ****/
+
+/**** début du footer ****/
+footer{
+    margin-left: 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Créer trois colonnes de largeur égale */
+    grid-gap: 10px; /* Ajouter un espace entre les éléments */
+    background-color: #C0E288;
+}
+
+.footer-item{
+    text-align: center; /* Centrer le texte à l'intérieur des éléments */
+    background-color: #C0E288;
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer-item ul li a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: black; /* Définir la couleur du texte des liens */
+    font-family: "The Girl Next Door", cursive; /* Utiliser la même police que pour le titre */
+    display: block; /* Permettre que chaque lien occupe toute la largeur du conteneur */
+
+}
+
+.footer-item ul {
+    list-style-type: none;
+
+}
+
+.footer-item ul li a:hover {
+    background-color: #80B539; /* Changer la couleur de fond au survol */
+}
+
+.footer-item p{
+    color: black;
+    font-size: large;
+    font-family: "The Girl Next Door", cursive;
+}
+/**** fin du footer ****/
+
+@media screen and (max-width: 640px){
+    .sidebar {
+        display: none;
+    }
+    .product img, .product_header, .description_product{
+        width: 300px;
+        padding-left: 50px;
+    }
+    .burger{
+        opacity: 1;
+        position: fixed;
+    }
+}

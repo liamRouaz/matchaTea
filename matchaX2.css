@@ -1,3 +1,4 @@
+/* Styles pour les titres */
 h1,
 .title {
   font-family: "The Girl Next Door", cursive;
@@ -8,8 +9,26 @@ h1,
   color: black;
   width: 150%; /* Ajustement de la largeur */
 }
+.burger {
+    padding-right: 300px; /* Garde un espace à droite */
+    opacity: 0; /* Rend l'élément invisible */
+    position: fixed; /* Positionnement fixe pour que l'élément reste à gauche */
+    left: 0; /* Colle l'élément à gauche */
+    top: 0; /* Colle l'élément en haut de la page */
+}
 
-/* Styles pour le banner */
+
+@media screen and (max-width: 640px){
+    .sidebar{
+        display: none;
+    }
+   .burger{
+    opacity: 1;
+    position: fixed;
+    } 
+}
+
+/* Styles pour la bannière */
 .banner {
     position: fixed;
     display: flex;
@@ -25,8 +44,7 @@ h1,
     margin-top: 0;
     margin-left: 100px; /* Décaler vers la droite de 80px */
     top: 0; /* Coller en haut de la page */
-  }
-  
+}
 
 .logo {
   width: 80px; /* Taille du logo en pixels */
@@ -34,14 +52,7 @@ h1,
   margin-right: 10px; /* Marge à droite pour séparer le logo du titre */
 }
 
-
-
-
-
-
-
-
-
+/* Styles pour la barre de navigation */
 nav {
     position: fixed;
     top: 0;
@@ -75,8 +86,9 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #5e9813;
 }
- /* Styles pour le contenu principal */
- #hero {
+
+/* Styles pour le contenu principal */
+#hero {
     margin-left: 140px; /* Décalage du contenu principal */
     padding-top: 100px; /* Espace entre la barre de navigation et le contenu principal */
 }
@@ -85,7 +97,7 @@ nav ul li a:hover {
     margin-left: 140px; /* Décalage du contenu principal */
 }
 
-/* Global styles */
+/* Styles globaux */
 body {
     font-family: "The Girl Next Door", cursive;
     margin: 0;
@@ -93,56 +105,49 @@ body {
     background-color: #d3f59d; /* Couleur de fond verte matcha */
 }
 
-
-  
-  p {
+p {
     font-family: "The Girl Next Door", cursive;
     color: white;
-  }
-  
-  h1, h2, h3 {
-      font-family: "The Girl Next Door", cursive;
-      color: #ffffff;
-  }
+}
+
+h1, h2, h3 {
+    font-family: "The Girl Next Door", cursive;
+    color: #ffffff;
+}
 
 /* Styles pour le contenu principal */
 main {
     margin-left: 130px; /* Ajouter une marge à gauche égale à la largeur de la barre de navigation */
 }
 
-.photo
-img {
+.photo img {
     max-width: 50%; /* La largeur de l'image ne dépassera pas la largeur du conteneur parent */
     height: auto; /* La hauteur de l'image s'ajuste automatiquement pour conserver les proportions */
 }
 
-
 /* CSS pour l'espacement entre les sections */
 #description-equipe {
     margin-bottom: 100px; /* Espacement en bas de la section "Description de l'équipe" */
-  }
-  
-  #photos-equipe {
-    margin-bottom: 20px; /* Espacement en bas de la section "Photos de l'équipe" */
-  }
-  
-  /* CSS pour l'espacement entre chaque rôle de membre */
-  .photo p {
-    margin-bottom: 20px; /* Espacement entre chaque rôle de membre */
-  }
-  
-.spacer
-{
-   margin-bottom: 100px;
 }
 
+#photos-equipe {
+    margin-bottom: 20px; /* Espacement en bas de la section "Photos de l'équipe" */
+}
 
-.spacer2
-{
+/* CSS pour l'espacement entre chaque rôle de membre */
+.photo p {
+    margin-bottom: 20px; /* Espacement entre chaque rôle de membre */
+}
+
+.spacer {
     margin-bottom: 100px;
 }
 
-/* Responsive styles */
+.spacer2 {
+    margin-bottom: 100px;
+}
+
+/* Styles responsives */
 @media only screen and (max-width: 768px) {
     #hero h1 {
       font-size: 36px;
@@ -151,9 +156,9 @@ img {
     #hero h2 {
       font-size: 16px;
     }
-  }
-  
-  @media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 480px) {
     #hero h1 {
       font-size: 24px;
     }
@@ -161,36 +166,10 @@ img {
     #hero h2 {
       font-size: 14px;
     }
-  }
-  
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer{
+/* Styles pour le pied de page */
+footer {
     margin-left: 8%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* Créer trois colonnes de largeur égale */
@@ -198,32 +177,30 @@ footer{
     background-color: #C0E288;
 }
 
-.footer-item{
+.footer-item {
     text-align: center; /* Centrer le texte à l'intérieur des éléments */
     background-color: #C0E288;
     text-decoration: none;
     list-style-type: none;
 }
+
 .footer-item ul li a {
     text-decoration: none; /* Supprimer le soulignement des liens */
     color: black; /* Définir la couleur du texte des liens */
     font-family: "The Girl Next Door", cursive; /* Utiliser la même police que pour le titre */
     display: block; /* Permettre que chaque lien occupe toute la largeur du conteneur */
-
 }
 
 .footer-item ul {
     list-style-type: none;
     margin-right: 50px; /* Ajoute une marge à gauche pour décaler le footer */
-
 }
 
 .footer-item ul li a:hover {
     background-color: #80B539; /* Changer la couleur de fond au survol */
 }
 
-.footer-item p{
+.footer-item p {
     color: black;
     font-size: large;
 }
-
